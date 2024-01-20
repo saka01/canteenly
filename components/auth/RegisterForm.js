@@ -1,39 +1,35 @@
 import React, { useState } from "react";
 
-
-const LoginComponent = () => {
-
+const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
 
-  async function handleLogin(e) {
+  async function handleRegister(e) {
     e.preventDefault();
     try {
-    const response = await fetch("/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
+      const response = await fetch("/api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      console.log(response);
+      if (!response.ok) {
+        throw new Error("Registeration failed");
+      }
+      window.location.href = "/dashboard";
 
-    if (!response.ok) {
-      throw new Error("Login failed");
+      // Handle successful login (e.g., redirect to dashboard)
+    } catch (error) {
+      console.error(error.message);
+      console.log(error.message);
+      // Handle login error
     }
-    window.location.href = "/dashboard";
-
-    // Handle successful login (e.g., redirect to dashboard)
-  } catch (error) {
-    console.error(error.message);
-    // Handle login error
   }
-}
-
-
   return (
     <div>
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleRegister}>
         <div>
           <label htmlFor="email">Email:</label>
           <input
@@ -52,11 +48,11 @@ const LoginComponent = () => {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
         {/* {error && <p>Error: {error}</p>} */}
       </form>
     </div>
   );
 };
 
-export default LoginComponent;
+export default RegisterForm;
