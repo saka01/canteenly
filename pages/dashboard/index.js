@@ -1,4 +1,4 @@
-
+import DashboardLayout from "../../components/dashboard/DashboardLayout";
 export async function getServerSideProps(context) {
   //react will look to see if theres a user
   const userCookie = context.req.cookies["currentUser"];
@@ -46,12 +46,12 @@ async function handleLogout(e) {
   
 
   return (
-    <>
-      <h1>Hello, Dashboard Page! Name</h1>
+    <DashboardLayout>
+      <h1>Hello, Dashboard Page! Print user details here</h1>
       <button onClick={handleLogout} type="submit">
         LogOut
       </button>
-    </>
+    </DashboardLayout>
   );
 }
 
