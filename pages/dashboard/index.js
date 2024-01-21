@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import DashboardLayout from "../../components/dashboard/DashboardLayout";
 
 export async function getServerSideProps(context) {
@@ -24,7 +23,6 @@ export async function getServerSideProps(context) {
 }
 
 export default function home({ user }) {
-  const [activeTab, setActiveTab] = useState("profile");
 
 async function handleLogout(e) {
     e.preventDefault();
