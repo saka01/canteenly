@@ -1,15 +1,17 @@
 import Link from "next/link";
+
 export default function SideNav() {
+
   return (
     <nav className="side-nav">
       <Link legacyBehavior href="/dashboard">
-        <a>Home</a>
+        <button className="nav-link">Dashboard</button>
       </Link>
       <Link legacyBehavior href="/dashboard/profile">
-        <a>Profile </a>
+        <button className="nav-link">Profile</button>
       </Link>
-      <Link legacyBehavior href="/dashboard/settings">
-        <a>Settings </a>
+      <Link legacyBehavior href="/dashboard/textmessaging">
+        <button className="nav-link">TextMessageMarketing</button>
       </Link>
     </nav>
   );
