@@ -16,6 +16,9 @@ export default function SideNav() {
       <Link legacyBehavior href="/dashboard/textmessaging">
         <button className="nav-link">TextMessage Marketing</button>
       </Link>
+      <Link legacyBehavior href="/dashboard/linkinbio">
+        <button className=",nav-link"> Linkinbio</button>
+      </Link>
     </nav>
   );
 }
