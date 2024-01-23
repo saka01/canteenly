@@ -10,8 +10,11 @@ export default function SideNav() {
       <Link legacyBehavior href="/dashboard/profile">
         <button className="nav-link">Profile</button>
       </Link>
+      <Link legacyBehavior href="/dashboard/menucreation">
+        <button className="nav-link">Menu Creation</button>
+      </Link>
       <Link legacyBehavior href="/dashboard/textmessaging">
-        <button className="nav-link">TextMessageMarketing</button>
+        <button className="nav-link">TextMessage Marketing</button>
       </Link>
     </nav>
   );
