@@ -2,23 +2,20 @@
 import React, { useState } from "react";
 
 import SideNav from "../nav/SideNav"; // Your Side Navigation Component
+import TopNav from "../nav/TopNav";
+import styles from "../../styles/dashboardLayout.module.css";
 
 const DashboardLayout = ({ children }) => {
 
   return (
-    <div className="dashboard-container">
-      <SideNav />
-      <div className="dashboard-content-area">{children}</div>
+    <div>
+      <TopNav />      
+      <div className="flex space-x-2">
+        <SideNav />
+        <div className="dashboard-content-area">{children}</div>
+      </div>
     </div>
   );
 };
 
 export default DashboardLayout;
-
-// Add corresponding CSS for `.dashboard-container` and `.content-area`
-  // content: [
-  //   "./pages/**/*.{js,ts,jsx,tsx}", // Paths to all JS/TS/JSX/TSX files in the `pages` directory
-  //   "./components/**/*.{js,ts,jsx,tsx}",
-  //   "./public/**/*.html",
-  //   "./node_modules/flowbite-react/lib/**/*.js",
-  // ],
