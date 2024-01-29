@@ -1,0 +1,46 @@
+.formContainer {
+    margin: auto;
+    border-radius: 8px;
+    background-color:#EEEDEB;
+    max-width: 42 rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.1) 0px 0px 4px;
+    width: 70%;
+    padding: 32px 16px;
+    max-width: 480px
+}
+.label{
+    margin: 1px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.1) 0px 0px 4px;
+    width: 10%;
+
+    max-width: 4px; 
+}
+
+.inputField {
+    margin: auto;
+    border-radius: 7px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.1) 0px 0px 4px;
+    width: 90%;
+    padding: 16px 16px;
+    max-width: 424px;
+
+}
+
+.button{
+    margin: auto;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.1) 0px 0px 4px;
+    width: 50%;
+    padding: 10px 12px;
+    max-width: 300px;
+
+    
+ 
+}
+.button:hover{
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
