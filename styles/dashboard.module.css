@@ -1,0 +1,31 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dashboard-content-area {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: center;
+    position: relative;
+  }
+  
+  
+  
+  .middle-line {
+    position: absolute;
+    height: 630px;
+    width: 2px;
+    margin-bottom: 100px;
+    background-color: #ccc;
+    left: 35%; 
+    margin-top: -631px;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure the line is behind other content */
+  }
+
+  /* <div style={{ display: 'flex', height: '100vh' }}> */
+  

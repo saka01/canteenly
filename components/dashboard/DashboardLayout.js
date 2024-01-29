@@ -1,18 +1,22 @@
 // components/DashboardLayout.js
-import React, { useState } from "react";
-
+import React from "react";
+import styles from '../../styles/dashboard.module.css';
 import SideNav from "../nav/SideNav"; // Your Side Navigation Component
 
 const DashboardLayout = ({ children }) => {
-
   return (
-    <div className="dashboard-container">
+    <div className={styles.dashboardContainer}>
       <SideNav />
-      <div className="dashboard-content-area">{children}</div>
+      <div className={styles['dashboard-content-area']}>
+        <div className={styles['center-content-vertically']}>
+          <div >
+            <div className={styles['middle-line']}></div>
+            {children}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default DashboardLayout;
-
-// Add corresponding CSS for `.dashboard-container` and `.content-area`
