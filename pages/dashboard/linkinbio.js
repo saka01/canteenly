@@ -79,7 +79,7 @@ const MyForm = () => {
         />
       </label>
       <br /><br />
-      <label className={Styles.label}>
+      <p className={Styles.label}>
         Cheff's Name:<br />
         <input
           name="linkedInBio"
@@ -87,7 +87,7 @@ const MyForm = () => {
           onChange={handleInputChange}
           className={Styles.inputField}
         />
-      </label>
+      </p>
       <br /><br />
       <button type="submit" className={Styles.button}>
         Submit
