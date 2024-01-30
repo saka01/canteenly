@@ -2,18 +2,16 @@
 import React from "react";
 import styles from '../../styles/dashboard.module.css';
 import SideNav from "../nav/SideNav"; // Your Side Navigation Component
+import TopNav from "../nav/TopNav";
+import styles from "../../styles/dashboardLayout.module.css";
 
 const DashboardLayout = ({ children }) => {
   return (
-    <div className={styles.dashboardContainer}>
-      <SideNav />
-      <div className={styles['dashboard-content-area']}>
-        <div className={styles['center-content-vertically']}>
-          <div >
-            <div className={styles['middle-line']}></div>
-            {children}
-          </div>
-        </div>
+    <div>
+      <TopNav />      
+      <div className="flex space-x-2">
+        <SideNav />
+        <div className="dashboard-content-area">{children}</div>
       </div>
     </div>
   );

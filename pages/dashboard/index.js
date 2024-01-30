@@ -31,7 +31,6 @@ async function handleLogout(e) {
       method: "POST",
     });
 
-
     if (!response.ok) {
       throw new Error("Logout failed");
     }
