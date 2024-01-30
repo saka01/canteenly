@@ -1,4 +1,4 @@
-import DashboardLayout from "../../components/dashboard/DashboardLayout";
+import DashboardLayout from '../../dashboard/DashboardLayout';
 import styles from '../../styles/menucreation.module.css';
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';

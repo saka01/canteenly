@@ -1,4 +1,5 @@
-import { auth } from "../../../lib/actions";
+
+import { auth } from "../../lib/actions";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { setCookie } from 'nookies';
 
