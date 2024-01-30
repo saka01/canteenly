@@ -1,7 +1,7 @@
 
-import { auth } from "../../lib/actions";
+import { auth } from "../../../lib/actions";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { setCookie } from 'nookies';
+import { setCookie } from "nookies";
 
 export default async function login(req, res) {
   const { email, password } = req.body;
