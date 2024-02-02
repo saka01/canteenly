@@ -1,29 +1,45 @@
-"use client";
 import Link from "next/link";
-import NavButton from "./NavButton";
 import { RxDashboard } from "react-icons/rx";
 import { MdPerson } from "react-icons/md";
 import styles from '../../styles/sideNav.module.css';
 
+const NavButton = ({ href, icon, children }) => {
+  return (
+    <Link href={href}>
+      <button className={styles["nav-link"]}>
+        {icon} {children}
+      </button>
+    </Link>
+  );
+};
+
 export default function SideNav() {
   return (
-    <nav className="flex flex-col space-y-5">
-      <NavButton icon={<RxDashboard />} href="/dashboard">
+    <nav className={styles["side-nav"]}>
+      <NavButton href="/dashboard" icon={<RxDashboard />}>
         Dashboard
       </NavButton>
-      <NavButton icon={<MdPerson />} href="/dashboard/profile">
+      <br />
+      <NavButton  icon={<MdPerson />} href="/dashboard/profile">
         Profile
       </NavButton>
-      <NavButton icon={<RxDashboard />} href="/dashboard/menucreation">
+      <br />
+      <NavButton icon={<RxDashboard />} href="/dashboard/menucreation" >
         Menu Creation
       </NavButton>
-      <NavButton icon={<RxDashboard />} href="/dashboard/linkinbio">
-        Linkinbio
+      <br />
+      <NavButton icon={<RxDashboard />} href="/dashboard/linkinbio" >
+        Linkin Bio
       </NavButton>
-      
-      <NavButton icon={<RxDashboard />} href="/dashboard/customers">
+      <br />
+      <NavButton icon={<RxDashboard />} href="/dashboard/textmessaging" >
         Customers
+      </NavButton><br/>
+      <NavButton icon={<RxDashboard />} href="/dashboard/textmessaging" >
+        Share My Website
       </NavButton>
+
+     
     </nav>
   );
 }

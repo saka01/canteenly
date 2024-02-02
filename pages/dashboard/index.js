@@ -48,9 +48,9 @@ async function handleLogout(e) {
   return (
     <DashboardLayout>
       <h1>Hello, Dashboard Page! Print user details here</h1>
-      <button onClick={handleLogout} type="submit">
-        LogOut
-      </button>
+      <button className="styles.side" onClick={handleLogout} type="submit">
+      LogOut
+    </button>
     </DashboardLayout>
   );
 }
