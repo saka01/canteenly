@@ -1,21 +1,45 @@
 import Link from "next/link";
+import { RxDashboard } from "react-icons/rx";
+import { MdPerson } from "react-icons/md";
+import styles from '../../styles/sideNav.module.css';
+
+const NavButton = ({ href, icon, children }) => {
+  return (
+    <Link href={href}>
+      <button className={styles["nav-link"]}>
+        {icon} {children}
+      </button>
+    </Link>
+  );
+};
 
 export default function SideNav() {
-
   return (
-    <nav className="side-nav">
-      <Link legacyBehavior href="/dashboard">
-        <button className="nav-link">Dashboard</button>
-      </Link>
-      <Link legacyBehavior href="/dashboard/profile">
-        <button className="nav-link">Profile</button>
-      </Link>
-      <Link legacyBehavior href="/dashboard/menucreation">
-        <button className="nav-link">Menu Creation</button>
-      </Link>
-      <Link legacyBehavior href="/dashboard/textmessaging">
-        <button className="nav-link">TextMessageMarketing</button>
-      </Link>
+    <nav className={styles["side-nav"]}>
+      <NavButton href="/dashboard" icon={<RxDashboard />}>
+        Dashboard
+      </NavButton>
+      <br />
+      <NavButton  icon={<MdPerson />} href="/dashboard/profile">
+        Profile
+      </NavButton>
+      <br />
+      <NavButton icon={<RxDashboard />} href="/dashboard/menucreation" >
+        Menu Creation
+      </NavButton>
+      <br />
+      <NavButton icon={<RxDashboard />} href="/dashboard/linkinbio" >
+        Linkin Bio
+      </NavButton>
+      <br />
+      <NavButton icon={<RxDashboard />} href="/dashboard/customers" >
+        Customers
+      </NavButton><br/>
+      <NavButton icon={<RxDashboard />} href="/dashboard/sharemywebsite" >
+        Share My Website
+      </NavButton>
+
+     
     </nav>
   );
 }

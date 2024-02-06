@@ -1,0 +1,71 @@
+/* styles/sideNav.module.css */
+
+.side-nav {
+  height: 561px;
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.1) 0px 0px 4px;
+  width: 100%;
+  padding: 32px 16px;
+  max-width: 244px;
+  margin-top: -80px;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.nav-link {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  color: #181818;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 254px;
+  height: 50px;
+  transition: all 0.3s ease;
+  
+}
+
+.nav-link:hover {
+  background-color: #d9dbdd;
+  transform: translateX(5px);
+}.sides:hover {
+  
+  background-color: #d9dbdd;
+  transform: scale(1.05); /* Increase the scale slightly on hover */
+}
+
+.sides {
+  
+  width: 254px;
+  height: 50px;
+  margin-top: 335px;
+  margin-left: -269px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  color: #584242;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+  transform-origin: top left; 
+  
+}
+
+
+
+/* z-index: 60; */

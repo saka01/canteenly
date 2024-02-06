@@ -1,0 +1,41 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.flex space-x-2-content-area {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.middle-line {
+  position: absolute;
+  height: 630px;
+  width: 2px;
+  margin-bottom: 100px;
+  background-color: #ccc;
+  left: 35%; 
+  margin-top: -631px;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure the line is behind other content */
+}
+
+.topNavTitle {
+  margin-left: 479px; /* Adjust the margin-left value as per your requirement */
+}
+
+.topNav{
+  
+  top: 50;
+  z-index: 50;
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+
+}
