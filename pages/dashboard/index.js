@@ -4,7 +4,7 @@ export async function getServerSideProps(context) {
   //react will look to see if theres a user
   const userCookie = context.req.cookies["currentUser"];
   if (!userCookie) {
-    console.log("nO USER");
+    console.log("nooooooO USER");
     return {
       redirect: {
         destination: "/signin",
