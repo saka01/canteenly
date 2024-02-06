@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { RxDashboard } from "react-icons/rx";
 import { MdPerson } from "react-icons/md";
@@ -38,8 +39,6 @@ export default function SideNav() {
       <NavButton icon={<RxDashboard />} href="/dashboard/sharemywebsite" >
         Share My Website
       </NavButton>
-
-     
     </nav>
   );
 }

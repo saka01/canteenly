@@ -6,6 +6,7 @@ export async function getServerSideProps(context) {
   const userCookie = context.req.cookies["currentUser"];
   if (!userCookie) {
     console.log("NO USER");
+
     return {
       redirect: {
         destination: "/signin",
@@ -33,6 +34,7 @@ export default function Home({ user }) { // Renamed to 'Home' as per Next.js con
       window.location.href = "/signin";
     } catch (error) {
       console.error(error.message);
+
     }
   }
 
