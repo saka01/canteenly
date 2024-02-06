@@ -32,10 +32,10 @@ export default function SideNav() {
         Linkin Bio
       </NavButton>
       <br />
-      <NavButton icon={<RxDashboard />} href="/dashboard/textmessaging" >
+      <NavButton icon={<RxDashboard />} href="/dashboard/customers" >
         Customers
       </NavButton><br/>
-      <NavButton icon={<RxDashboard />} href="/dashboard/textmessaging" >
+      <NavButton icon={<RxDashboard />} href="/dashboard/sharemywebsite" >
         Share My Website
       </NavButton>
 

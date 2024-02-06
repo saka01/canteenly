@@ -30,3 +30,12 @@
 .topNavTitle {
   margin-left: 479px; /* Adjust the margin-left value as per your requirement */
 }
+
+.topNav{
+  
+  top: 50;
+  z-index: 50;
+  border-bottom: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+
+}

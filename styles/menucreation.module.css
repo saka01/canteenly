@@ -3,18 +3,7 @@
   height: -10px
 
 }
-.menuContainer {
-  height: 546px;
-  border-radius: 7px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px, rgba(0, 0, 0, 0.1) 0px 0px 4px;
-  width: 900px;
-  padding: 32px 16px;
-  max-width: 424px;
-  display: flex;
-  flex-direction: column;
- 
-}
+
 
 .menuItem {
   margin-top: 10px; /* Adjust the top margin as needed */
@@ -124,4 +113,13 @@ div .menuItems{
  
   margin-top: -20px;  
   margin-left: 106px; 
+}
+.inn {
+  position: fixed;
+  top: 7%;
+  left: 91%;
+  transform: translate(-50%, -50%);
+  width: 183px;
+  height: 39px;
+  border-radius: 9px;
 }
